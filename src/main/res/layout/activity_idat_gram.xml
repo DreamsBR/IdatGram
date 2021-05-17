@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".IdatGram">
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_custom_background"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/outlinedButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_add_photo"
+            app:iconTint="#C3DD3636" />
+
+        <TextView
+            android:layout_width="278dp"
+            android:layout_height="52dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/IdatGram"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/outlinedBut"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_send"
+            app:iconTint="#C3DD3636" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:text="@string/Stories"
+            />
+
+        <TextView
+            android:layout_width="214dp"
+            android:layout_height="match_parent"
+            android:text=""
+
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="end"
+            android:onClick="clickTextView"
+            android:text="@string/Whatch"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="86dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@mipmap/ic_foto1_round" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@mipmap/ic_foto3" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@mipmap/prueba3_round" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@mipmap/ic_foto4" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_foto5_round" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="365dp"
+        android:layout_height="10dp"
+        android:background="#9b9b9b"
+        />
+
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            android:layout_margin="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@mipmap/ic_foto3" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17px"
+                android:text="Dreams" />
+
+            <TextView
+                android:id="@+id/asd"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5px"
+                android:text="Hace 1 minuto" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="50dp"></TextView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="39dp"
+            android:layout_gravity="end|right"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_baseline_more_horiz_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="366dp"
+        android:layout_height="191dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/fot1"></ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="367dp"
+        android:layout_height="2dp"></View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_start" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_comend" />
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_send" />
+
+        <View
+            android:layout_width="208dp"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_bookmark_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="367dp"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:textSize="10dp"
+            android:text="Liked by DreamsBr and anothers 160."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:text="Dreamsbr It's ok"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            android:layout_margin="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@drawable/luna" />
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textVieqwe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17px"
+                android:text="Sofia" />
+
+            <TextView
+                android:id="@+id/a123"
+                android:layout_width="119dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5px"
+                android:text="Hace 10 minutos" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="50dp"></TextView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="39dp"
+            android:layout_gravity="end|right"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_baseline_more_horiz_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="366dp"
+        android:layout_height="191dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/fot2"></ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="367dp"
+        android:layout_height="2dp"></View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_start" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_comend" />
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_send" />
+
+        <View
+            android:layout_width="208dp"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_bookmark_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="367dp"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:textSize="10dp"
+            android:text="Liked by DreamsBr and anothers 160."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:text="Dreamsbr It's ok"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
